@@ -1,0 +1,227 @@
+{
+  "version": "34.0.0",
+  "artifacts": {
+    "Vpc.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "Vpc.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "Vpc": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Vpc.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/478feaf0c6e662958dc6598c25ee0734929be484b2b1487741cf9f5681117261.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "Vpc.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "Vpc.assets"
+      ],
+      "metadata": {
+        "/Vpc/AluraVpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcACBDAE3D"
+          }
+        ],
+        "/Vpc/AluraVpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPublicSubnet1Subnet55D5C076"
+          }
+        ],
+        "/Vpc/AluraVpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPublicSubnet1RouteTable752F60E1"
+          }
+        ],
+        "/Vpc/AluraVpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPublicSubnet1RouteTableAssociationF5FF9C0F"
+          }
+        ],
+        "/Vpc/AluraVpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPublicSubnet1DefaultRouteC041EE2C"
+          }
+        ],
+        "/Vpc/AluraVpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPublicSubnet1EIPC549C336"
+          }
+        ],
+        "/Vpc/AluraVpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPublicSubnet1NATGateway45A35841"
+          }
+        ],
+        "/Vpc/AluraVpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPublicSubnet2Subnet330AA5D1"
+          }
+        ],
+        "/Vpc/AluraVpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPublicSubnet2RouteTable0F255868"
+          }
+        ],
+        "/Vpc/AluraVpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPublicSubnet2RouteTableAssociationCEEDFC80"
+          }
+        ],
+        "/Vpc/AluraVpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPublicSubnet2DefaultRoute9C0361F3"
+          }
+        ],
+        "/Vpc/AluraVpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPublicSubnet2EIP1BA3B2A8"
+          }
+        ],
+        "/Vpc/AluraVpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPublicSubnet2NATGatewayB89E341D"
+          }
+        ],
+        "/Vpc/AluraVpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPrivateSubnet1Subnet1A80C03D"
+          }
+        ],
+        "/Vpc/AluraVpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPrivateSubnet1RouteTable85CEEF32"
+          }
+        ],
+        "/Vpc/AluraVpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPrivateSubnet1RouteTableAssociationA142C9C2"
+          }
+        ],
+        "/Vpc/AluraVpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPrivateSubnet1DefaultRouteA0F0D322"
+          }
+        ],
+        "/Vpc/AluraVpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPrivateSubnet2SubnetA7B54DAC"
+          }
+        ],
+        "/Vpc/AluraVpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPrivateSubnet2RouteTableA813CEC1"
+          }
+        ],
+        "/Vpc/AluraVpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPrivateSubnet2RouteTableAssociationAC5E8893"
+          }
+        ],
+        "/Vpc/AluraVpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcPrivateSubnet2DefaultRouteFFCDC3BA"
+          }
+        ],
+        "/Vpc/AluraVpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcIGW9F22D6BB"
+          }
+        ],
+        "/Vpc/AluraVpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcVPCGW39D984E2"
+          }
+        ],
+        "/Vpc/AluraVpc/RestrictDefaultSecurityGroupCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AluraVpcRestrictDefaultSecurityGroupCustomResourceAE6DD858"
+          }
+        ],
+        "/Vpc/Custom::VpcRestrictDefaultSGCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomVpcRestrictDefaultSGCustomResourceProviderRole26592FE0"
+          }
+        ],
+        "/Vpc/Custom::VpcRestrictDefaultSGCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomVpcRestrictDefaultSGCustomResourceProviderHandlerDC833E5E"
+          }
+        ],
+        "/Vpc/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/Vpc/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/Vpc/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/Vpc/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "Vpc"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
